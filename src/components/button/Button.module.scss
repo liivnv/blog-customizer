@@ -8,12 +8,28 @@
 	text-align: center;
 	border: 1px solid #000000;
 	cursor: pointer;
+	background-color: var(--button-bg-color, transparent);
 }
 
-.button:active {
+/*.button:active {
 	background: var(--gold, #ffc802);
 }
 
 .button:hover {
-	background: var(--gold, #ffc802);
+	background: var(--gold, #FFEDAB);
+}*/
+
+.button:hover {
+	background-color: var(--button-hover-bg-color, #FFFFFF);
+	filter: invert(var(--button-hover-invert, 0));
+  }
+  
+.button:active {
+	background-color: var(--button-active-bg-color, #FFFFFF);
 }
+
+.button:hover::after {
+	content: var(--button-hover-tx-color);
+  }
+  
+  

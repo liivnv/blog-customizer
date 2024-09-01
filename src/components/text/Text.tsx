@@ -1,4 +1,4 @@
-import { ElementType, ReactNode } from 'react';
+import { CSSProperties, ElementType, ReactNode } from 'react';
 import { clsx } from 'clsx';
 import { FontFamiliesClasses } from 'src/constants/articleProps';
 
@@ -37,7 +37,7 @@ export const Text = ({
 	uppercase = false,
 	align = 'left',
 	family = 'open-sans',
-	dynamicLite = false,
+	dynamicLite = false
 }: TextProps) => {
 	const className = clsx(
 		styles.text,
